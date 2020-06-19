@@ -1,0 +1,1 @@
+UPDATE `open_hsp`.`patient` SET  `age` = 77  WHERE `patient_id` = 99902, 

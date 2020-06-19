@@ -1,0 +1,3 @@
+"insert into patient values(99901,40,'MALE','GUJARATI','9999849998','testName1','testCreator1',sysdate(),'testModUser1',sysdate(),0,0,null) "
+"insert into patient values(99902,25,'FEMALE','GUJARATI','9999849999','testName2','testCreator2',sysdate(),'testModUser2',sysdate(),0,0,null) "
+"insert into patient values(99903,50,'OTHERS','GUJARATI','9999899999','testName3','testCreator3',sysdate(),'testModUser3',sysdate(),0,0,null) "

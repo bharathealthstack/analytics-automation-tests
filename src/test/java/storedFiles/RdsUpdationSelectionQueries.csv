@@ -1,0 +1,1 @@
+Select count(distinct(*)) from `open_hsp`.`patient`  where `patient_id` = 99904 and `age` = 77 ,count(distinct(*)),1
