@@ -43,7 +43,7 @@ public class SwasthAnalyticsTests {
 
     @Test(priority = 6)
     public void RdsQueryExecutionTests() {
-        rdsTests.selectQuery("app/src/test/java/StoredFiles/RdsSanityQueries.csv");
+        rdsTests.selectQuery("src/test/java/StoredFiles/RdsSanityQueries.csv");
     }
 
     @Test(priority = 7)
