@@ -34,7 +34,7 @@ public class RDSConnections {
                     port +
                     "/" + dbName +
                     "?user=" + userName + "&password=" + password;
-            System.out.println(":::JDBC URL:::"+jdbcUrl);
+            //System.out.println(":::JDBC URL:::"+jdbcUrl);
             // Load the JDBC driver
             try {
                 System.out.println("Loading driver...");

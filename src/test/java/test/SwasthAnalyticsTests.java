@@ -25,29 +25,29 @@ public class SwasthAnalyticsTests {
 
     @Test(priority = 3)
     public void deletionTest() {
-//        rdsTests.dataDeletion("/Users/msuren1/Desktop/rds/src/test/java/storedFiles/RdsDeletionQueries.csv");
-//        rdsTests.selectQuery("/Users/msuren1/Desktop/rds/src/test/java/storedFiles/RdsDeletionSelectionQueries.csv");
+//        rdsTests.dataDeletion("src/test/java/storedFiles/RdsDeletionQueries.csv");
+//        rdsTests.selectQuery("src/test/java/storedFiles/RdsDeletionSelectionQueries.csv");
 
     }
 
     @Test(priority = 4)
     public void athenaSelectionTest() {
-//        processedLayerTests.test("/Users/msuren1/Desktop/rds/src/test/java/storedFiles/AthenaSanityQueries.csv");
+//        processedLayerTests.test("src/test/java/storedFiles/AthenaSanityQueries.csv");
     }
 
     //step 4 : Recorrect the data
     @Test(priority = 5)
     public void dataCleanUpTests() {
-//        rdsTests.selectQuery("/Users/msuren1/Desktop/rds/src/test/java/storedFiles/RdsCleanupQueries.csv");
+//        rdsTests.selectQuery("src/test/java/storedFiles/RdsCleanupQueries.csv");
     }
 
     @Test(priority = 6)
     public void RdsQueryExecutionTests() {
-        rdsTests.selectQuery("src/test/java/StoredFiles/RdsSanityQueries.csv");
+        rdsTests.selectQuery("app/src/test/java/StoredFiles/RdsSanityQueries.csv");
     }
 
     @Test(priority = 7)
     public void AthenaQueryExecutionTests() {
-//        processedLayerTests.test1("/Users/msuren1/Desktop/rds/src/test/java/storedFiles/AthenaSanityQueries.csv");
+//        processedLayerTests.test1("src/test/java/storedFiles/AthenaSanityQueries.csv");
     }
 }
