@@ -1,0 +1,1 @@
+"SELECT count(distinct(patient_id)) FROM qa_processed.consultation where patiend_id like (99901,99902,99903)","2"

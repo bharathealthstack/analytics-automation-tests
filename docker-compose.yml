@@ -1,0 +1,20 @@
+version: '2'
+services:
+  code:
+    build: .
+    command: bash install.sh runTest
+    tty: true
+    environment:
+      - RDS_DB_NAME=$RDS_DB_NAME
+      - RDS_USERNAME=$RDS_USERNAME
+      - RDS_PASSWORD=$RDS_PASSWORD
+      - RDS_HOSTNAME=$RDS_HOSTNAME
+      - RDS_PORT=$RDS_PORT
+      - S3_BUCKET_NAME=$S3_BUCKET_NAME
+      - S3_KEY=$S3_KEY
+      - ATHENA_OUTPUT_BUCKET=$ATHENA_OUTPUT_BUCKET
+      - ATHENA_DEFAULT_DATABASE=$ATHENA_DEFAULT_DATABASE
+      - DEFAULT_REGION=$DEFAULT_REGION
+      - bucketName=$bucketName
+      - AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+      - AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY

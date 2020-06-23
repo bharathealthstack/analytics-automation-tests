@@ -18,7 +18,7 @@ public class RDSConnections {
     QueryReaderUtils queryReaderUtils=new QueryReaderUtils();
 //    static Connection conn = getRemoteConnection();
 
-    public static Connection getRemoteConnection() {
+    public Connection getRemoteConnection() {
         System.out.println("::: Inside getRemoteConnection() :::");
             String dbName = System.getenv("RDS_DB_NAME");
             String userName = System.getenv("RDS_USERNAME");

@@ -1,3 +1,3 @@
-DELETE FROM `open_hsp`.`patient`  WHERE patient_id=99901 ,
-UPDATE `open_hsp`.`patient` SET  `age` = 40  WHERE `patient_id` = 99902, 
-"insert into patient values(99903,40,'MALE','GUJARATI','9999849998','testName','testCreator',sysdate(),'testModUser',sysdate(),0,0,null) ",
+"DELETE FROM patient  WHERE patient_id=99901 "
+"UPDATE patient  SET age=40 WHERE patient_id=99902"
+"Insert into patient values(99903,40,'MALE','GUJARATI','9999849998','testName','testCreator',sysdate(),'testModUser',sysdate(),0,0,null) "

@@ -1,1 +1,1 @@
-Select count(distinct(*)) from `open_hsp`.`patient`  where `patient_id` = 99904,count(distinct(*)),1
+"Select count(distinct(patient_id)) from open_hsp.patient where patient_id=99903","count(distinct(patient_id))","1"

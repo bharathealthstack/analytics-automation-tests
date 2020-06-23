@@ -56,7 +56,7 @@ public class S3Operations {
     }
 
     public void downloadS3File(){
-//        File file = new File("/Users/msuren1/Desktop/rds/src/test/java/storedFiles/test.parquet");
+//        File file = new File("");
 //        s3Client.getObject(new GetObjectRequest(bucketName,key),file);
         TransferManager transferManager = TransferManagerBuilder.standard().withS3Client(s3Client).build();
         Date lastUpdatedTime;
@@ -153,7 +153,7 @@ public class S3Operations {
         }
     }
     private static void displayTextInputStream(InputStream input) throws IOException {
-//        File file="/Users/msuren1/Desktop/rds/src/test/java/storedFiles/test.parquet";
+//        File file="";
         // Read the text input stream one line at a time and display each line.
         BufferedReader reader = new BufferedReader(new InputStreamReader(input));
         String line = null;

@@ -1,1 +1,1 @@
-SELECT count(distinct(consultation_id)) FROM open_hsp.consultation where created_date like '2020-05-15%',count(distinct(consultation_id)),24
+"SELECT count(distinct(consultation_id)) FROM open_hsp.consultation where created_date like '2020-05-15%'","count(distinct(consultation_id))","24"

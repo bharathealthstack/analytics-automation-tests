@@ -1,1 +1,1 @@
-DELETE FROM `open_hsp`.`patient`  WHERE patient_id=99903;
+"DELETE FROM patient WHERE patient_id=99903"

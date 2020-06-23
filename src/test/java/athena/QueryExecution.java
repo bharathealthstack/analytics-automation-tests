@@ -1,5 +1,6 @@
 package athena;
 
+import org.testng.Assert;
 import software.amazon.awssdk.services.athena.AthenaClient;
 import software.amazon.awssdk.services.athena.model.*;
 import software.amazon.awssdk.services.athena.paginators.GetQueryResultsIterable;
@@ -45,9 +46,15 @@ public class QueryExecution {
                 startQueryExecutionResponse = athenaClient.startQueryExecution(startQueryExecutionRequest);
                 waitForQueryToComplete(athenaClient, startQueryExecutionResponse.queryExecutionId());
                 results=processResultRows(athenaClient, startQueryExecutionResponse.queryExecutionId());
-                System.out.println(results);
+                System.out.println(results.get(1));
+                String result=results.get(1).data().toString();
+                System.out.println(result);
+                String finalResult=(result.substring(result.lastIndexOf('=')+1)
+                        .replaceAll("\\)","")
+                        .replaceAll("]",""));
+                System.out.println(finalResult);
                 if(queryFromArray.get(1)!=null){
-//                    Assert.assertEquals(getRow(results), queryFromArray.get(1));
+                    Assert.assertEquals(finalResult, queryFromArray.get(1));
                 }
             }
         } catch (AthenaException e) {
@@ -128,19 +135,6 @@ public class QueryExecution {
                 System.out.println("The value of the column is "+data.varCharValue());
             }
         }
-    }
-    private static Object getRow(List<Row> row) {
-        int i=0;
-        Iterator iterator = row.iterator();
-        //Write out the data
-            while(iterator.hasNext()) {
-                if(i%2!=0){
-                    System.out.println(iterator.next());
-                    return iterator.next();
-                }
-                i++;
-            }
-        return null;
     }
     public static void stopAthenaQuery(AthenaClient athenaClient, String sampleQueryExecutionId){
         try {
