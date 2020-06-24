@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Test Suite for Swasth">
+<suite name="Sanity Suite">
     <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     </listeners>
-    <test name="Test Cases" >
+    <test name="SanityTest" >
         <classes>
-            <class name="test.SwasthAnalyticsTests"/>
+            <class name="test.SantiyTests"/>
         </classes>
     </test>
 </suite>

@@ -1,2 +1,1 @@
 "SELECT count(distinct(consultation_id)) FROM qa_processed.consultation where created_at like '2020-06-15%'","0"
-

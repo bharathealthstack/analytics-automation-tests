@@ -19,14 +19,14 @@ function sendMail {
 
 function runTest {
     set -e
-    echo RDS_DB_NAME
+    echo "RDS_DB_NAME"
     echo $RDS_DB_NAME
     echo "Printing service"
     echo ${args[1]}
     echo "########################"
     installTestDependencies
     echo "runTest"
-    mvn clean test -DsuiteXmlFile=testng.xml -X
+    mvn clean test -DtestSuite=sanitysuite -X
     echo "########################"
     echo "Status = ${status}"
     echo "-----------------------"

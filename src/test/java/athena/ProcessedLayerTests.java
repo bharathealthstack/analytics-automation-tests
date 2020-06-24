@@ -8,7 +8,7 @@ public class ProcessedLayerTests {
     AthenaClient athenaClient = AthenaClient.builder()
             .region(Region.AP_SOUTH_1)
             .build();
-    public void test(String fileName){
+    public void consultationTest(String fileName){
         System.out.println(":::Inside athenaDataTest:::");
         queryExecution.submitAthenaQuery(athenaClient,fileName);
         System.out.println(":::Outside athenaDataTest:::");

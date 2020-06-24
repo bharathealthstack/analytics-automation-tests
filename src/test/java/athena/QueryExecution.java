@@ -55,6 +55,7 @@ public class QueryExecution {
                 System.out.println(finalResult);
                 if(queryFromArray.get(1)!=null){
                     Assert.assertEquals(finalResult, queryFromArray.get(1));
+                    System.out.println("Assertion complete");
                 }
             }
         } catch (AthenaException e) {

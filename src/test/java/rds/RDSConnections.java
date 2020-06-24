@@ -44,7 +44,6 @@ public class RDSConnections {
             } catch (ClassNotFoundException e) {
                 throw new RuntimeException("Cannot find the driver in the classpath!", e);
             }
-            System.out.println("::: JDBC URL:::"+jdbcUrl);
             conn = getConnection(jdbcUrl);
             System.out.println("Connection completed...");
             return conn;
